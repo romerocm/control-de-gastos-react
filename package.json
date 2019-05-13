@@ -24,6 +24,7 @@
     "css-loader": "^2.1.1",
     "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "firebase": "^6.0.2",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
@@ -35,6 +36,7 @@
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
@@ -42,6 +44,7 @@
     "webpack": "^4.30.0"
   },
   "devDependencies": {
+    "dotenv": "^8.0.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
   }
