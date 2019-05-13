@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // process.env.NODE_ENV = process.env.NODE_ENV || 'development';
@@ -41,7 +42,10 @@ module.exports = (env) => {
       }]
     },
     plugins: [
-      CSSExtract
+      CSSExtract,
+      new webpack.DefinePlugin({
+        'process.env.FIREBASE_API_KEY': process.env.FIREBASE_API_KEY
+      })
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
